@@ -1,0 +1,333 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskufiarabic.css);
+
+body{
+    margin: 0;
+    padding:0;
+}
+*{
+    font-family: 'Noto Sans Kufi Arabic', sans-serif;
+    direction: rtl;
+    box-sizing: border-box;
+}
+header{
+    background: #e9e9e9;
+    height: 667px;
+    padding: 30px 97px 0px 97px;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color:#191919;
+    padding: 15px;
+    font-size: 16px;
+    display: inline-block;
+}
+.logo{
+    
+    padding: 1px;
+    
+}
+nav{
+    align-items:  center;
+    margin-bottom: 182px;
+    display: flex;
+}
+
+.welcome-container{
+    width: 507px;
+    height: 239px;
+    text-align: justify;
+}
+.btnContact{
+    font-size: 12pt;    /*16 px= 12pt*/
+    background: #39b4af;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 54px;
+    text-align: center;
+  
+}
+
+.btnContact:hover{
+    cursor: pointer;
+}
+.welcome-container p{
+    color: #787878;
+}
+
+header > img{
+    width: 700px;
+    height: 470px;
+    position: absolute;
+    left:10%;
+    top:110px;
+    transform: rotateY(180deg);
+    z-index: 0;
+    
+}
+.sec-aboutus{
+    text-align: center;
+    padding: 80px;
+    
+}
+.sec-aboutus  p:nth-child(2){
+    color: #787878;
+    font-size: 21px;
+    width: 625px;
+    margin: 10px auto;
+}
+.sec-aboutus h2{
+    font-size: 40px;
+}
+
+.sec-aboutus p:nth-child(3){
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.sect-skills{
+    display: flex;
+}
+
+.left-column{
+    background: #f8f9f9;
+    padding: 120px 100px;
+    flex:50%;
+}
+.right-column{
+    background: url('../images/busi.jpg') no-repeat;
+    flex: 50%;
+    background-size: cover;
+    height: 571px;
+    
+}
+.gray-bar{
+    background: #d8d8d8;
+    position: relative;
+    width: 100%;
+    margin-bottom: 17px;
+    height: 3px;
+}
+.green-bar{
+    background: #10c9c3;
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 3px;
+}
+#ux{
+    width:75%
+}
+#web{
+    width:90%
+}
+#mark{
+    width: 65%;
+}
+.sect-feedback{
+    display: flex;
+    background: #10c9c3;
+}
+.outer{
+    margin: 40px auto;
+}
+.inner{
+    display: flex;
+    color:white;
+    flex-direction: row-reverse;
+    text-align: left;
+}
+.icon{
+    padding: 30px;
+}
+
+.sect-images .row1, .sect-images .row2{
+    display:flex;
+    
+}
+.sect-images img{
+    width:25%;
+    height:300px;
+    object-fit: cover;
+}
+
+.sect-form{
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sect-form h2{
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.sect-form p{
+    color: #787878;
+}
+.sect-form div{
+    margin-bottom: 30px;
+}
+
+.sect-form input{
+    outline: none;
+    border: none;
+    text-indent: 25px;
+    height: 50px;
+    text-align: right;
+  
+}
+form{
+    margin: 10px auto;
+    width:673px;
+}
+.address > input , .comment > textArea{
+    width:100%;
+}
+button{
+    background: #10c9c3;
+    color: white;
+    text-align: center;
+    width: 180px;
+    height: 55px;
+    border: none;
+    font-size: 18px;
+}
+.user > input{
+    width: 49.5%;
+}
+textArea{
+    height: 171px;
+    border:none;
+}
+
+footer{
+    background: #141414;
+    padding: 59px 51px;
+}
+footer div{
+    color:white;
+}
+
+.alert-box{
+    padding:  20px;
+    text-align: center;
+    color:white;
+    background:linear-gradient(#000000,#cccccc,#000000);
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px white;
+    width:350px;
+    height: 230px;
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 300px;
+    z-index: 90998989;
+    animation-name: animalert;
+    animation-duration: 700ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animalert{
+    from{
+        top: -400px;
+        opacity:0;
+    }
+    to{
+        top:300px;
+        opacity:1;
+    }
+}
+
+.alert-box input{
+    padding: 12px;
+    border: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width:730px){
+    nav{
+        flex-direction: column-reverse;
+        background: rgba(0,0,0,0.5);
+        
+    }
+    a{
+        border-bottom: 2px solid white;
+        font-weight: bolder;
+        color:white !important; /*!important will do over write */
+        width: 100%;
+       
+    }
+    header > img{
+        opacity: 0.2;
+        width: 100%;
+    }
+    .logo{
+        text-align: left;
+        padding-top: 10px;
+        border-bottom: none;
+    }
+    header{
+        padding: 0;
+        height: 1000px;
+    }
+    .welcome-container{
+        width: 98%;
+        text-align: center;
+    }
+    
+    .sec-aboutus p:nth-child(2){
+        width: 98%
+    }
+    .sec-aboutus{
+        padding: 0;
+    }
+    .sect-skills{
+        flex-direction: column;
+    }
+    .left-column, .right-column{
+        flex:100%;
+        min-height: 571px;
+    }
+    .sect-feedback{
+        flex-direction: column;
+    }
+    .outer{
+        margin: 0;
+        border-bottom: 1px solid white;
+    }
+    .inner{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center; 
+    }
+    .row1, .row2{
+        flex-direction: column;
+    }
+    .sect-images > div > img{
+        width:100%;
+    }
+    .sect-form{
+        padding: 10px;
+    }
+    .sect-form .user input{
+        width: 100%;
+    }
+   
+    .user input[type=text]{
+        margin-bottom: 25px;
+    }
+    .comment, .address, .user{
+        width: 100%;
+    }
+    
+    textArea, input{
+        text-indent: 2px;
+    }
+    form{
+        width:100%;
+    }
+    
+}
